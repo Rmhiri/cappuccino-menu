@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cappuccino Menu</title>
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #3b1f14;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #ffd54f;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  .menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  .menu-section {
+    background-color: #4e2a1a;
+    border-radius: 12px;
+    margin: 15px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  }
+  .menu-section h2 {
+    color: #ffcc33;
+    border-bottom: 2px solid #ffcc33;
+    text-align: center;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  li {
+    font-size: 1.1em;
+    margin: 8px 0;
+    border-bottom: 1px dashed #ffcc33;
+    padding-bottom: 4px;
+    display: flex;
+    justify-content: space-between;
+  }
+  span.price {
+    color: #ffd54f;
+    font-weight: bold;
+  }
+  @media (max-width: 768px) {
+    .menu-section {
+      width: 90%;
+    }
+  }
+</style>
+</head>
+<body>
+  <h1>Cappuccino Menu</h1>
+  <div class="menu-container">
+
+    <div class="menu-section">
+      <h2>Coffee Menu</h2>
+      <ul>
+        <li>Express <span class="price">2.50€</span></li>
+        <li>Américan <span class="price">2.80€</span></li>
+        <li>Capucin <span class="price">3.00€</span></li>
+        <li>Café Crème <span class="price">3.20€</span></li>
+        <li>Cappuccino <span class="price">3.50€</span></li>
+        <li>Iced Coffee <span class="price">3.80€</span></li>
+        <li>Iced Coffee Aromatisé <span class="price">4.00€</span></li>
+        <li>Frappuccino <span class="price">4.50€</span></li>
+        <li>Chocolat au Lait <span class="price">3.20€</span></li>
+        <li>Chocolat Chaud <span class="price">3.20€</span></li>
+        <li>Thé <span class="price">2.80€</span></li>
+        <li>Thé Amande <span class="price">3.00€</span></li>
+      </ul>
+    </div>
+
+    <div class="menu-section">
+      <h2>Dessert Menu</h2>
+      <ul>
+        <li>Cookies <span class="price">2.00€</span></li>
+        <li>Pain au Chocolat <span class="price">2.50€</span></li>
+        <li>Brownies <span class="price">3.00€</span></li>
+        <li>Croissant <span class="price">2.20€</span></li>
+        <li>Cheesecake <span class="price">3.80€</span></li>
+        <li>Fondant <span class="price">3.50€</span></li>
+        <li>Pathé <span class="price">2.80€</span></li>
+        <li>Dose Arôme <span class="price">0.50€</span></li>
+      </ul>
+    </div>
+
+    <div class="menu-section">
+      <h2>Drink Menu</h2>
+      <ul>
+        <li>Smoothie <span class="price">4.00€</span></li>
+        <li>Jus Citron / Orange <span class="price">3.00€</span></li>
+        <li>Jus Fraise <span class="price">3.50€</span></li>
+        <li>Jus Banane <span class="price">3.50€</span></li>
+        <li>Jus Banane Datte Fruits Secs <span class="price">4.00€</span></li>
+        <li>Twixi <span class="price">4.20€</span></li>
+        <li>Milk Shake (Vanille, Fraise, Chocolat) <span class="price">4.00€</span></li>
+        <li>Milk Shake (Nutella, Spéculoos) <span class="price">4.50€</span></li>
+        <li>Soda <span class="price">2.50€</span></li>
+        <li>Eau 0.9L <span class="price">1.50€</span></li>
+        <li>Eau 0.5L <span class="price">1.00€</span></li>
+      </ul>
+    </div>
+
+  </div>
+</body>
+</html>
