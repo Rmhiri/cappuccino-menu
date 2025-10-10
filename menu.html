@@ -25,14 +25,13 @@
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
-    gap: 15px; /* espace entre les sections */
   }
   .menu-section {
     background-color: #4e2a1a;
     border-radius: 12px;
+    margin: 15px;
     padding: 20px;
-    flex: 1 1 200px; /* flexible avec largeur minimale de 200px */
-    box-sizing: border-box; /* inclut padding et border dans la largeur */
+    width: 300px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.4);
   }
   .menu-section h2 {
@@ -60,7 +59,7 @@
   }
   @media (max-width: 768px) {
     .menu-section {
-      flex: 1 1 90%; /* prend presque toute la largeur sur mobile */
+      width: 90%;
     }
   }
 </style>
@@ -187,3 +186,4 @@
   </div>
 </body>
 </html>
+
