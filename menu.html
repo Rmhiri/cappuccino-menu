@@ -3,137 +3,186 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Menu Café</title>
+<title>Cappuccino Menu</title>
 <style>
   body {
     font-family: 'Poppins', sans-serif;
-    background-color: #faf8f5;
-    color: #333;
+    background-color: #3b1f14;
+    color: #fff;
     margin: 0;
+    padding: 0;
+  }
+  h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #ffd54f;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  .menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 20px;
   }
-  h2 {
-    background-color: #e4c29e;
-    color: #fff;
-    padding: 10px;
-    border-radius: 8px;
-    text-transform: uppercase;
+  .menu-section {
+    background-color: #4e2a1a;
+    border-radius: 12px;
+    margin: 15px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
   }
-  .section {
-    margin-bottom: 25px;
+  .menu-section h2 {
+    color: #ffcc33;
+    border-bottom: 2px solid #ffcc33;
+    text-align: center;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
   }
   ul {
     list-style: none;
     padding: 0;
-    margin: 0;
   }
   li {
+    font-size: 1.1em;
+    margin: 8px 0;
+    border-bottom: 1px dashed #ffcc33;
+    padding-bottom: 4px;
     display: flex;
     justify-content: space-between;
-    padding: 6px 10px;
-    border-bottom: 1px solid #ddd;
   }
-  li:last-child {
-    border-bottom: none;
-  }
-  .price {
+  span.price {
+    color: #ffd54f;
     font-weight: bold;
+  }
+  @media (max-width: 768px) {
+    .menu-section {
+      width: 90%;
+    }
   }
 </style>
 </head>
 <body>
+  <h1>Cappuccino Menu</h1>
+  <div class="menu-container">
 
-  <h1>Menu du Café</h1>
+    <!-- Café & Thé -->
+    <div class="menu-section">
+      <h2>Café & Thé</h2>
+      <ul>
+        <li>Express <span class="price">2,200 DT</span></li>
+        <li>Capucin <span class="price">2,300 DT</span></li>
+        <li>Américain <span class="price">2,200 DT</span></li>
+        <li>Cappuccino <span class="price">2,700 DT</span></li>
+        <li>Capucin Nestlé <span class="price">3,300 DT</span></li>
+        <li>Café Crème <span class="price">2,500 DT</span></li>
+        <li>Nescafé <span class="price">2,300 DT</span></li>
+        <li>Thé <span class="price">1,500 DT</span></li>
+        <li>Thé à la Menthe <span class="price">2,000 DT</span></li>
+        <li>Thé Infusion <span class="price">3,000 DT</span></li>
+        <li>Thé aux Amandes <span class="price">3,000 DT</span></li>
+      </ul>
+    </div>
 
-  <div class="section">
-    <h2>Café & Thé</h2>
-    <ul>
-      <li><span>Espresso</span><span class="price">3000 dt</span></li>
-      <li><span>Allongé</span><span class="price">3000 dt</span></li>
-      <li><span>Café crème</span><span class="price">3500 dt</span></li>
-      <li><span>Cappuccino</span><span class="price">4000 dt</span></li>
-      <li><span>Café turc</span><span class="price">3000 dt</span></li>
-      <li><span>Thé</span><span class="price">3000 dt</span></li>
-    </ul>
+    <!-- Iced Coffee -->
+    <div class="menu-section">
+      <h2>Iced Coffee</h2>
+      <ul>
+        <li>Iced Americano <span class="price">3,000 DT</span></li>
+        <li>Iced Café <span class="price">4,000 DT</span></li>
+        <li>Iced Café Aromatisé <span class="price">4,800 DT</span></li>
+      </ul>
+    </div>
+
+    <!-- Frappuccino -->
+    <div class="menu-section">
+      <h2>Frappuccino</h2>
+      <ul>
+        <li>Frappuccino Caramel <span class="price">5,000 DT</span></li>
+        <li>Frappuccino Moca <span class="price">5,000 DT</span></li>
+        <li>Frappuccino Spéculos <span class="price">6,000 DT</span></li>
+        <li>Frappuccino Nutella <span class="price">6,000 DT</span></li>
+      </ul>
+    </div>
+
+    <!-- Smoothies -->
+    <div class="menu-section">
+      <h2>Smoothies</h2>
+      <ul>
+        <li>Smoothie Fraise <span class="price">5,000 DT</span></li>
+        <li>Smoothie Pina Colada <span class="price">5,000 DT</span></li>
+        <li>Smoothie Framboise <span class="price">5,000 DT</span></li>
+        <li>Smoothie Ananas <span class="price">5,000 DT</span></li>
+      </ul>
+    </div>
+
+    <!-- Boissons & Jus -->
+    <div class="menu-section">
+      <h2>Boissons & Jus</h2>
+      <ul>
+        <li>Jus Citron <span class="price">3,000 DT</span></li>
+        <li>Jus d'Orange <span class="price">3,000 DT</span></li>
+        <li>Jus Fraise <span class="price">4,000 DT</span></li>
+        <li>Jus Fruits <span class="price">4,000 DT</span></li>
+        <li>Jus Banane <span class="price">5,000 DT</span></li>
+        <li>Jus Date Banane Fruits Secs <span class="price">7,000 DT</span></li>
+        <li>Jus Citron Amande <span class="price">4,500 DT</span></li>
+        <li>Mint Lemonade <span class="price">3,500 DT</span></li>
+        <li>Mojito <span class="price">5,000 DT</span></li>
+        <li>Twixi <span class="price">6,000 DT</span></li>
+        <li>Soda <span class="price">2,700 DT</span></li>
+        <li>Eau Minérale 0,5 L <span class="price">1,000 DT</span></li>
+        <li>Eau Minérale 0,9 L <span class="price">1,800 DT</span></li>
+      </ul>
+    </div>
+
+    <!-- Doses -->
+    <div class="menu-section">
+      <h2>Doses</h2>
+      <ul>
+        <li>Dose Arôme <span class="price">1,200 DT</span></li>
+        <li>Dose Menthe <span class="price">0,500 DT</span></li>
+        <li>Dose Nestlé <span class="price">1,000 DT</span></li>
+        <li>Dose Amande <span class="price">1,500 DT</span></li>
+      </ul>
+    </div>
+
+    <!-- Extras -->
+    <div class="menu-section">
+      <h2>Extras</h2>
+      <ul>
+        <li>Chocolat au Lait <span class="price">1,800 DT</span></li>
+        <li>Chocolat Chaud <span class="price">2,800 DT</span></li>
+        <li>Tasse de Lait <span class="price">1,500 DT</span></li>
+        <li>Rami <span class="price">3,000 DT</span></li>
+        <li>Chicha <span class="price">0,000 DT</span></li>
+      </ul>
+    </div>
+
+    <!-- Desserts -->
+    <div class="menu-section">
+      <h2>Desserts</h2>
+      <ul>
+        <li>Cookies <span class="price">3,000 DT</span></li>
+        <li>Croissant <span class="price">1,800 DT</span></li>
+        <li>Pain au Chocolat <span class="price">1,800 DT</span></li>
+        <li>Gâteaux <span class="price">2,500 DT</span></li>
+        <li>Brownies <span class="price">3,500 DT</span></li>
+        <li>Cheesecake <span class="price">6,000 DT</span></li>
+        <li>Fondant <span class="price">4,000 DT</span></li>
+      </ul>
+    </div>
+
+    <!-- Salé -->
+    <div class="menu-section">
+      <h2>Salé</h2>
+      <ul>
+        <li>Pâté <span class="price">2,500 DT</span></li>
+      </ul>
+    </div>
+
   </div>
-
-  <div class="section">
-    <h2>Iced Coffee</h2>
-    <ul>
-      <li><span>Iced Latte</span><span class="price">5000 dt</span></li>
-      <li><span>Iced Cappuccino</span><span class="price">5000 dt</span></li>
-      <li><span>Iced Americano</span><span class="price">4500 dt</span></li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Frappuccino</h2>
-    <ul>
-      <li><span>Caramel</span><span class="price">6000 dt</span></li>
-      <li><span>Vanille</span><span class="price">6000 dt</span></li>
-      <li><span>Chocolat</span><span class="price">6000 dt</span></li>
-      <li><span>Pistache</span><span class="price">6000 dt</span></li>
-      <li><span>Oreo</span><span class="price">6000 dt</span></li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Smoothies</h2>
-    <ul>
-      <li><span>Fraise</span><span class="price">7000 dt</span></li>
-      <li><span>Banane</span><span class="price">7000 dt</span></li>
-      <li><span>Mangue</span><span class="price">7000 dt</span></li>
-      <li><span>Kiwi</span><span class="price">7000 dt</span></li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Boissons & Jus</h2>
-    <ul>
-      <li><span>Jus d’orange</span><span class="price">5000 dt</span></li>
-      <li><span>Cocktail maison</span><span class="price">6000 dt</span></li>
-      <li><span>Eau</span><span class="price">1500 dt</span></li>
-      <li><span>Soda</span><span class="price">3500 dt</span></li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Doses</h2>
-    <ul>
-      <li><span>Dose menthe</span><span class="price">2000 dt</span></li>
-      <li><span>Dose caramel</span><span class="price">2000 dt</span></li>
-      <li><span>Dose vanille</span><span class="price">2000 dt</span></li>
-      <li><span>Dose noisette</span><span class="price">2000 dt</span></li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Extras</h2>
-    <ul>
-      <li><span>Rami</span><span class="price">0 dt</span></li>
-      <li><span>Chicha</span><span class="price">0 dt</span></li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Desserts</h2>
-    <ul>
-      <li><span>Brownies</span><span class="price">5000 dt</span></li>
-      <li><span>Cheesecake</span><span class="price">6000 dt</span></li>
-      <li><span>Cookies</span><span class="price">3500 dt</span></li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Salé</h2>
-    <ul>
-      <li><span>Croissant jambon fromage</span><span class="price">6000 dt</span></li>
-      <li><span>Pizza</span><span class="price">7000 dt</span></li>
-      <li><span>Tacos</span><span class="price">8000 dt</span></li>
-      <li><span>Panini</span><span class="price">7000 dt</span></li>
-      <li><span>Omelette</span><span class="price">6000 dt</span></li>
-    </ul>
-  </div>
-
 </body>
 </html>
